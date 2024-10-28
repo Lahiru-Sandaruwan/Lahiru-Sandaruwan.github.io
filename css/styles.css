@@ -702,7 +702,19 @@ input[type='checkbox'] {
 }
 
 .basic-4 .image-container {
-	margin-bottom: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Set fixed width and height for uniform image sizes */
+.basic-4 .image-container img {
+    width: 100%;          /* Ensures image scales to container width */
+    height: 200px;         /* Fixed height for uniformity */
+    object-fit: cover;     /* Ensures image fills container without distortion */
+    margin: 0;
+    transition: all 0.2s;
 }
 
 /* Hover Animation */
